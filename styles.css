@@ -10,47 +10,51 @@
     --light-coral: #f28482ff;
 */
 
-body{
-    background-color: #f7ede2;
-}  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Roboto:wght@300;400&display=swap');
 
-h1{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f7ede2;
+}
+
+li, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 500;
     font-size: 36px;
 }
 
-.header{
-    padding: 0 1em;
-}
-
-.topnav{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10%;
+    padding: 14px 10%;
 }
 
-.topnav h1{
-    float: left;
-    text-align: center;
+.nav_links {
+    list-style: none;
 }
 
-.topnav a{
-    justify-content: flex-end;
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 18px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
 }
-    .topnav a:hover{
-        color: #f28482;
-    }
-    .topnav a.active {
-        color: #84a59d;
-    }
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #f28482ff;
+}
 
