@@ -2,4 +2,55 @@
 	 Date: Oct. 6, 2021 
      Project: Copa Amor */
 
+/* CSS HEX 
+    --maximum-yellow-red: #f6bd60ff;
+    --linen: #f7ede2ff;
+    --baby-pink: #f5cac3ff;
+    --morning-blue: #84a59dff;
+    --light-coral: #f28482ff;
+*/
+
+body{
+    background-color: #f7ede2;
+}  
+
+h1{
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.header{
+    padding: 0 1em;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+}
+
+.topnav h1{
+    float: left;
+    text-align: center;
+}
+
+.topnav a{
+    justify-content: flex-end;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+    .topnav a:hover{
+        color: #f28482;
+    }
+    .topnav a.active {
+        color: #84a59d;
+    }
 
