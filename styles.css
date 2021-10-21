@@ -34,6 +34,12 @@ h1 {
     font-size: 36px;
 }
 
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -95,4 +101,61 @@ header {
     width: 2880px;
     position: center;
     float: left;
+}
+
+.button_frame{
+    padding: 4% 20%;
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.button_link{
+    background-color: #f7ede2;
+    border: 2px solid black;
+    color: black;
+    padding: 18px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.welcome_frame{
+    overflow: hidden;
+    min-height: 150px;
+    margin: 20px 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.welcome_frame h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 200%;
+}
+
+.welcome_frame h2{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.menu_frame {
+    overflow: hidden;
+    min-height: 150px;
+    margin: 20px 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu_frame h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 200%;
+}
+
+.menu_frame h2{
+    text-align: center;
+    line-height: 1.6;
 }
