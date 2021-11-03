@@ -44,7 +44,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 10%;
+    padding: 20px 5%;
 }
 
 .nav_links {
@@ -67,7 +67,7 @@ header {
 .slider_frame{
     overflow: hidden;
     max-height: 650px;
-    margin: 20px 10%;
+    margin: 10px 3%;
 }
 
 @-webkit-keyframes slide_animation{
@@ -111,8 +111,9 @@ header {
 }
 
 .button_link{
-    background-color: #f7ede2;
+    background-color: transparent;
     border: 2px solid black;
+    box-shadow: 3px 3px white;
     color: black;
     padding: 18px 38px;
     text-align: center;
@@ -120,7 +121,15 @@ header {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 400;
+    text-transform: capitalize;
 }
+
+    .button_link:hover{
+        background-color: white;
+        transition-duration: .9s;
+        box-shadow: none;
+    }
 
 .welcome_frame{
     overflow: hidden;
@@ -128,18 +137,35 @@ header {
     margin: 20px 10%;
     padding-top: 5%;
     padding-bottom: 5%;
+    background-color: #f5cac3;
 }
 
-.welcome_frame h1{
-    text-align: center;
-    font-size: 30px;
-    line-height: 200%;
+.welcome_background{
+    background-color: #f5cac3;
+    margin: 20px 3%;
 }
 
-.welcome_frame h2{
-    text-align: center;
-    line-height: 1.6;
-}
+    .welcome_frame h1{
+        text-shadow:2px 2px white;
+        text-align: center;
+        font-size: 30px;
+        line-height: 200%;
+        background-color: #f5cac3;
+    }
+
+    .welcome_frame h2{
+        text-align: center;
+        line-height: 1.6;
+        background-color: #f5cac3;
+    }
+
+    .button_frame_welcome{
+        padding: 4% 20%;
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        background-color: #f5cac3;
+    }
 
 .menu_frame {
     overflow: hidden;
@@ -147,15 +173,98 @@ header {
     margin: 20px 10%;
     padding-top: 5%;
     padding-bottom: 5%;
+    background-color: #f6bd60;
 }
 
-.menu_frame h1{
-    text-align: center;
-    font-size: 30px;
-    line-height: 200%;
+    .menu_background{
+        background-color: #f6bd60;
+        margin: 20px 3%;
+    }
+
+    .menu_frame h1{
+        text-shadow:2px 2px white;
+        text-align: center;
+        font-size: 30px;
+        line-height: 200%;
+        background-color: #f6bd60;
+    }
+
+    .menu_frame h2{
+        text-align: center;
+        line-height: 1.6;
+        background-color: #f6bd60;
+    }
+
+    .button_frame_menu{
+        padding: 4% 20%;
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        background-color: #f6bd60;
+    }
+
+.merch_frame {
+    background-color: #84a59d;
+    overflow: hidden;
+    min-height: 150px;
+    margin: 20px 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+    .merch_background{
+        background-color: #84a59d;
+        margin: 20px 3%;
+    }
+
+    .merch_frame h1{
+        text-shadow:2px 2px white;
+        background-color: #84a59d;
+        text-align: center;
+        font-size: 30px;
+        line-height: 200%;
+    }
+
+    .merch_frame h2{
+        background-color: #84a59d;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .button_frame_merch{
+        padding: 4% 20%;
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        background-color: #84a59d;
+    }
+
+.footer{
+    margin: 60px 5%;
 }
 
-.menu_frame h2{
-    text-align: center;
-    line-height: 1.6;
-}
+    .footer ul{
+        list-style: none;
+        line-height: 1.6;
+    }
+
+    .footer li{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .footer ul a{
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .footer ul a:hover{
+        text-decoration: none;
+        opacity: 1;
+    }
+
+    .footer p{
+        padding-top: 30px;
+        font-family: 'Kaisei Tokumin', serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
